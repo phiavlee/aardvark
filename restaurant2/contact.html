@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<!--
+    Name: Phia V. Lee
+    Date Created: 27Jul19
+    Most recent revision: 2
+-->
+<html lang="en"> 
+    <head> 
+        <title>Contact Us</title>
+        <link href="styles/restaurantstyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            label {
+                font-weight:bold;
+            }
+        </style>
+    </head> 
+    
+    <body>
+        <header>
+            <h1>The Squirrely Rooster</h1>
+        </header>
+
+        <nav>
+                <hr/>
+                <a href="home.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact Us</a>
+                <hr/>    
+        </nav>
+
+        <form action="submit" method="POST">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br/>
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email"><br/>
+            <label for="phone">Phone: </label>
+            <input type="text" id="phone" name="phone"><br/>
+
+            <label for="reason">Reason for Inquiry:</label>
+            <select name="reason">
+                <option value="cater" selected>Catering</option>
+                <option value="private">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br/>
+
+            <label for="info">Additional Information:</label>
+            <textarea id="info" name="info"></textarea><br/>
+
+            <label for="been">Have you been to the restaurant?</label>
+            <input type="radio" name="been" value="No" checked>No
+            <input type="radio" name="been" value="Yes">Yes<br/>
+
+            <label for="bestdays">Best days to contact you:</label>
+            <input type="checkbox" name="bestdays" value="M">M
+            <input type="checkbox" name="bestdays" value="T">T
+            <input type="checkbox" name="bestdays" value="W">W
+            <input type="checkbox" name="bestdays" value="Th">Th
+            <input type="checkbox" name="bestdays" value="F">F<br/>
+
+            <input type="submit" name="submit" value="Send Request">
+
+        </form>
+
+        <footer>
+            <hr/>
+            <p>1234 Food St, Fauxville, XR 54321
+            <br/>
+            (123) 555-1234</p>
+        </footer>
+    </body> 
+</html

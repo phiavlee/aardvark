@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<!--
+    Name: Phia V. Lee
+    Date Created: 27Jul19
+    Most recent revision: 3
+-->
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="styles/restaurantstyles.css" rel="stylesheet" type="text/css" />
+        <style>
+            label {
+                font-weight:bold;
+            }
+        </style>
+        <noscript>The site is best viewed with JavaScript enabled.</noscript>
+        <script type="text/javascript">
+            function formcheck() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var phone = document.getElementById("phone").value;
+                var reason = document.getElementById("reason").value;
+                var info = document.getElementById("info").value;
+                if (name == "" || email == "" || phone == "" || reason == "" || info == "") {
+                    alert("Please fill the form completely before resubmitting!");
+                }
+            }
+        </script>
+    </head> 
+    
+    <body>
+        <div class="container">
+            <header>
+                <h1>The Squirrely Rooster</h1>
+            </header>
+
+            <nav>
+                    <hr/>
+                    <a class="btn badge-pill" href="home.html"><i class="fa fa-home"></i></a>
+                    <a class="btn badge-pill" href="menu.html">Menu</a>
+                    <a class="btn badge-pill" href="contact.html">Contact Us</a>
+                        <hr/>    
+            </nav>
+
+            <form onsubmit="formcheck()">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" class="form-control" id="name" name="name"><br/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" class="form-control" id="email" name="email"><br/>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone: </label>
+                    <input type="text" class="form-control" id="phone" name="phone"><br/>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Reason for Inquiry:</label>
+                    <select id="reason" class ="form-control">
+                        <option selected>Catering</option>
+                        <option>Private Party</option>
+                        <option>Feedback</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check form-check-inline">               
+                        <label for="info">Additional Information:</label>
+                        <textarea class="form-control" id="info" name="info" rows="3"></textarea><br/>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <label for="been">Have you been to the restaurant?</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="been" id="beenRadio1" value="No" checked>
+                        <label class="form-check-label" for="beenRadio1">No</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="been" id="beenRadio2" value="Yes">
+                        <label class="form-check-label" for="beenRadio2">Yes</label><br/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <label for="bestdays">Best days to contact you:</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="bestdays" id="bestdays" value="M">
+                        <label class="form-check-label" for="bestdays">M</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="bestdays" id="bestdays" value="T">
+                        <label class="form-check-label" for="bestdays">T</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="bestdays" id="bestdays" value="W">
+                        <label class="form-check-label" for="bestdays">W</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="bestdays" id="bestdays" value="Th">
+                        <label class="form-check-label" for="bestdays">Th</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="bestdays" id="bestdays" value="F">
+                        <label class="form-check-label" for="bestdays">F</label>
+                    </div>
+                </div>
+
+                <input type="submit" name="submit" value="Send Request">
+
+            </form>
+
+            <footer>
+                <hr/>
+                <p>1234 Food St, Fauxville, XR 54321
+                <br/>
+                (123) 555-1234</p>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body> 
+</html
